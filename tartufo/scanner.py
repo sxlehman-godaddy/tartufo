@@ -108,7 +108,7 @@ class Issue:
         output.append(self.OUTPUT_SEPARATOR)
         output.append(util.style_ok(f"Reason: {self.issue_type.value}"))  # type: ignore
         if self.issue_detail:
-            output.append(util.style_ok(f"Detail: {self.issue_detail}"))
+            output.append(util.style_ok(f"Default Regex Detected: {self.issue_detail}."))
         output.append(util.style_ok(f"Filepath: {self.chunk.file_path}"))
         output.append(util.style_ok(f"Signature: {self.signature}"))
         output += [
